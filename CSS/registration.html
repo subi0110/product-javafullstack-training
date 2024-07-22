@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Table</title>
+    <style>
+        body{
+            background-color: rgb(160, 10, 230);
+        }
+        #tab{
+            margin-top: 150px;
+            width: 900px;
+            height: 800px;
+        }
+        #top{
+            text-align: center;
+        }
+        #name{
+            border: none;
+            border-radius: 25px;
+            background-color: rgb(25, 31, 31);
+            color: rgb(230, 235, 236);
+            transition: 0.4s;
+            height: 30px;
+            margin-left: 20px;
+        }
+        #name:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+        #but{
+            border: none;
+            border-radius: 25px;
+            background-color: rgb(220, 12, 30);
+            color: rgb(13, 13, 12);
+            transition: 0.4s;
+            width: 100px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        #but:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <table border="1" width="700px" height="400px" id="tab">
+        <th colspan="2">Registration Form</th>
+        <tr>
+            <td for="name" id="top">Student Name</td>
+            <td><input type="text" name="name" placeholder="    Enter your name" id="name"></td>
+        </tr>
+        <tr>
+            <td for="name" id="top">Father's Name</td>
+            <td><input type="text" name="name" placeholder="   Enter your Father's name" id="name"></td>
+        </tr>
+        <tr>
+            <td for="name" id="top">Mother's Name</td>
+            <td><input type="text" name="name" placeholder="   Enter your Mother's name" id="name" ></td>
+        </tr>
+        <tr>
+            <td for="name" id="top">Date of Birth</td>
+            <td><input type="date" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td for="name" id="top">Email ID</td>
+            <td><input type="email" name="name" placeholder="   Enter your Email ID" id="name"></td>
+        </tr>
+        <TR>
+            <td for="name" id="top">Mobile No</td>
+            <td><input type="number" name="name" placeholder="   Enter your Mobile No" id="name"></td>
+        </TR>
+        <tr >
+            <td for="add" id="top">State</td>
+            <td><textarea rows="5" cols="20" type="text" id="add" placeholder="   Enter your Address"></textarea></td>
+        </tr>
+        <tr>
+            <td for="add" id="top">State</td>
+            <td><input type="text" name="add" placeholder="   Enter your state" id="name"></td>
+        </tr>
+        <tr>
+            <td for="add" id="top">City</td>
+            <td><input type="text" name="add" placeholder="   Enter your City" id="name"></td>
+        </tr>
+        <tr>
+            <td for="add" id="top"></td>
+            <td><button type="submit" id="but">Submit</button></td>
+        </tr>
+    </table></center>
+</body>
+</html>
