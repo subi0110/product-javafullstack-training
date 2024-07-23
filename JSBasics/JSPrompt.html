@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <script>
+            function myFunction(){
+                confirm("Do you want to continue?");
+            }
+            function greeting(){
+                let name=prompt("enter your name :");
+                alert("welcome" + name);
+            }
+        </script>
+    </head>
+    <body onload ="myFunction()">
+        <button onclick="greeting()">Click Me</button>
+    </body>
+</html>

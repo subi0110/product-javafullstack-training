@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>My Web page</title>
+        <script>
+        function calculator() {
+            var a = parseInt(document.getElementById("n1").value);
+            var b = parseInt(document.getElementById("n2").value);
+            var op = document.getElementById("op").value;
+            var result = "";
+            if(op == "add")
+               result = "Addtion: " + (a+b);
+               if(op == "sub")
+               result = "Subtraction: " + (a-b);
+               if(op == "multi")
+               result = "Multiplication: " + (a*b);
+               if(op == "div")
+               result = "Division: " + (a/b);
+            document.getElementById("ResultDiv").innerHTML = "<font color ='green'><b>" + result + "</b></font>"
+        }
+        </script>
+    </head>
+    <body>
+        Enter First Number <input type="text" id="n1"/>
+        <br><br>
+        Enter Second Number <input type="text" id="n2"/>
+        <br><br>
+        Select Operation <select id ="op">
+            <option value="add">Addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="multi">Multiplication</option>
+            <option value="div">Division</option>
+        </select>
+        <br><br>
+        <button onclick="calculator()">Calculate</button><br><br>
+        <div id = "ResultDiv"></div>
+    </body>
+</html>
