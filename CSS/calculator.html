@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .calculator {
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            background-color: #ec2463;
+            width: 260px;
+        }
+
+        .display {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: right;
+            font-size: 24px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .buttons button {
+            height: 60px;
+            font-size: 20px;
+            background-color: #099c6e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .buttons button:active {
+            background-color: #d22db1;
+        }
+
+        .buttons button.zero {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button>C</button>
+            <button>%</button>
+            <button>←</button>
+            <button>/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button class="zero">00</button>
+            <button>0</button>
+            <button>=</button>
+        </div>
+    </div>
+</body>
+</html>
