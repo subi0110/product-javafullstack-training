@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>My First Web Page</title>
+    </head>
+    <body>
+        <script>
+            class Student{
+                constructor(name,age,studies){
+                    this.name=name;
+                    this.age=age;
+                    this.studies=studies;
+                }
+                display(){
+                    document.write("<br>Student Name :" + this.name);
+                    document.write("<br>Student Age :" + this.age);
+                    document.write("<br>Student Studies :" + this.studies);
+                }
+            }
+            var student1 = new Student("subi",20,"IT");
+            student1.display();
+
+            var student2 = new Student("alan",22,"IT");
+            student2.display();
+        </script>
+    </body>
+</html>

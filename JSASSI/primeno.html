@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime number or Not</title>
+    <script>
+        function prime() {
+            let n = parseInt(document.getElementById("n").value);
+
+            if (n < 2) {
+                document.getElementById("ResultDiv").innerHTML = n + " The given number is not a prime";
+                return;
+            }
+
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i === 0) {
+                    document.getElementById("ResultDiv").innerHTML = n + " The given number is not a prime";
+                    return;
+                }
+            }
+            document.getElementById("ResultDiv").innerHTML = n + " The given number is a prime";
+        }
+    </script>
+</head>
+<body>
+    Enter the number: <input type="text" id="n"/>
+    <br><br>
+    <button onclick="prime()">PrimeNumber</button>
+    <br><br>
+    <div id="ResultDiv">
+
+    </div>
+</body>
+</html>

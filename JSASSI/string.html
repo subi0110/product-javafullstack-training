@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="color: rgb(32, 201, 141)" id="cont">Welcome to JS!</h1>
+    <p id="len"></p>
+    <p id="pos"></p>
+    <p id="slice"></p>
+    <p id="sub"></p>
+    <p id="str"></p>
+    <p id="up"></p>
+    <p id="low"></p>
+    <p id="cat"></p>
+    <p id="trim"></p>
+    <p id="trimstart"></p>
+    <p id="trimend"></p>
+    <p id="rep"></p>
+    <p id="repl"></p>
+    <p id="replall"></p>
+    <p id="split"></p>
+    <script>
+      let str = document.getElementById("cont").innerHTML;
+      document.getElementById("len").innerHTML =
+        "<b>String Length : </b>" + str.length;
+      document.getElementById("pos").innerHTML =
+        "<b>Character at 6 : </b>" + str.charAt(6);
+      document.getElementById("slice").innerHTML =
+        "<b>Slice from 1 to 8 : </b>" + str.slice(1, 8);
+      document.getElementById("sub").innerHTML =
+        "<b>Substring from 6 : </b>" + str.substring(6);
+      document.getElementById("str").innerHTML =
+        "<b>Substr from 7 : </b>" + str.substr(7);
+      document.getElementById("up").innerHTML =
+        "<b>Uppercase : </b>" + str.toUpperCase();
+      document.getElementById("low").innerHTML =
+        "<b>Lowercase : </b>" + str.toLowerCase();
+      document.getElementById("cat").innerHTML =
+        '<b>Concating word " By javascript " : </b>' +
+        str.concat(" - by Javascript");
+      document.getElementById("trim").innerHTML =
+        "<b>Trimmed word : </b>" + str.trim();
+      document.getElementById("trimstart").innerHTML =
+        "<b>Trimmed at Starting pos : </b>" + str.trimStart();
+      document.getElementById("trimend").innerHTML =
+        "<b>Trimmed at Ending pos : </b>" + str.trimEnd();
+      document.getElementById("rep").innerHTML =
+        "<b>Repeat 2 times : </b>" + str.repeat(2);
+      document.getElementById("repl").innerHTML =
+        "<b>Replacing o as y at first : </b>" + str.replace("o", "y");
+      document.getElementById("replall").innerHTML =
+        "<b>Replacing o as y all : </b>" + str.replaceAll("o", "y");
+      document.getElementById("split").innerHTML =
+        "<b>Splitted word : </b>" + str.split("");
+    </script>
+  </body>
+</html>

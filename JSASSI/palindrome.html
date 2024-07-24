@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    Enter the String:<input type="text" id="str1"><br><br>
+    <button onclick="check()">palindrome</button><br><br>
+    <p id="Result"></p>
+    <script>
+        function check(){
+            var a = "";
+            a = document.getElementById("str1").value;
+            var c ="";
+            var result = "";
+            for(i = a.length-1;i>=0;i--){
+            c = c+a.charAt(i);
+        }
+            if(a == c)
+                result = "It is palindrome";
+            else
+                result = "Not a palindrome";
+
+                document.getElementById('Result').innerHTML=result;
+        }
+       
+    </script>
+</body>
+</html>

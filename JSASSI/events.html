@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    
+    <title>Document</title>
+</head>
+<body onload="Load()">
+    <button onclick="Clk()">Click Here</button>
+    <p id="res"></p>
+
+    <label for="content">Enter Content : </label>
+    <input type="text" onchange="Change()" id="in">
+    <p id="cont"></p>
+
+    <h2><span id="mouseover" onmouseover="Mouse()">good</span></h2>
+
+    <script>
+        function Load(){
+            alert("Page Loaded")
+        }
+        function Clk(){
+            document.getElementById('res').innerHTML = "Button is Clicked!";
+        }
+        function Change(){
+            let val = document.getElementById("in").value;
+            document.getElementById('cont').innerHTML = val;
+        }
+        function Mouse(){
+            document.getElementById("mouseover").innerHTML = "good job";
+        }
+    </script>
+</body>
+</html>
