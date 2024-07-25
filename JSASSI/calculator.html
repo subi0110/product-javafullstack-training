@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <style>
         body {
@@ -64,7 +61,7 @@
     <div class="calculator">
         <input type="text" class="display" id="display" disabled>
         <div class="buttons">
-            <button onclick="clearDisplay()"class="clear">C</button>
+            <button onclick="clearDisplay()"class="c">C</button>
             <button onclick="appendCharacter('%')" class="operator">%</button>
             <button onclick="appendCharacter('<=')" class="operator"><=</button>
             <button onclick="appendCharacter('/')" class="operator">/</button>
@@ -83,8 +80,7 @@
             <button onclick="appendCharacter('00')">00</button>
             <button onclick="appendCharacter('0')" class="span-2">0</button>
             <button onclick="appendCharacter('.')">.</button>
-            <button onclick="appendCharacter('sin')">sin</button>
-            <button onclick="calculate()" class="equal">=</button>
+            <button onclick="calculate()" class="eq">=</button>
            
            
         </div>
