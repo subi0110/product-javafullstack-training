@@ -1,275 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess board</title>
-    <link rel="stylesheet" href="stylechess.css">
+    <title>Chess Box</title>
+    <style>
+        body{
+            margin-top: 130px;
+            margin-left: 470px;
+        }
+        #tab{
+           
+            width: 500px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+        #b1{
+            width: 20px;
+            height: 20px;
+            background-color: rgb(232, 169, 169);
+
+        }
+        #b2{
+            width: 20px;
+            height: 20px;
+            background-color: rgb(8, 8, 8);
+        }
+        #d1{
+            border: 5px solid rgb(21, 19, 19);
+            padding: 5px;
+           width: fit-content;
+        }
+    </style>
 </head>
 <body>
+    <div id="d1">
+    <table id="tab">
+        
+        <tr>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+        </tr>
+        <tr>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+        </tr>
+        <tr>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+        </tr>
+        <tr>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+        </tr>
+        <tr>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+        </tr>
+        <tr>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+        </tr>
+        <tr>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+            <td id="b1"></td>
+            <td id="b2"></td>
+        </tr>
     
-.container{
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    height: 800px;
-    display: grid;
-    border: 7px solid black;
-    padding: 6px;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,1fr);
-}
-
-.black-box{
-    background-color: rgb(37, 37, 37);
-
-}
-
-.white-box{
-    background-color: rgba(240, 146, 187, 0.678);
-}
-
-    <div class="board">
-       
-        <div class="row">
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-            <div class="white-box">
-
-            </div>
-
-            <div class="black-box">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-            <div class="black-box">
-
-            </div>
-
-            <div class="white-box">
-
-            </div>
-        </div>
-    </div>
+    </table>
+</div>
 </body>
 </html>
