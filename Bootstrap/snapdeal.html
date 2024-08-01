@@ -1,107 +1,848 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Page Title</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-/* Style the header */
-.header {
-    padding: 5px;
- background: rgb(227,0,71);
-  color: rgb(0, 0, 0);
-}
-.one{
-    padding: 10px;
-    background-color: rgb(227,0,71);
-    color: black;
+    <!-- Fontawesome -->
 
-}
-  .one input[type=text] {
-    padding: 6px;
-    margin-top: 7px;
-    font-size: 20px;
-    border: none;
-    
-  }
-  .vertical {
-    width: 250px;
-  }
-  .vertical a {
-    background-color: #eee;
-    color: black;
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-  }
-  
-  .vertical a:hover {
-    background-color: #ccc;
-  }
-  .vertical a.active {
-    background-color: rgb(227,0,71);
-    color: white;
-  }
-  .right{
-    color: black;
-    position: absolute;
-     top: 8px;
-     right: 16px;
-    font-size: 15px;
-    word-spacing:15px;
-    cursor: pointer;
- }
- .btn{
-    padding: 18px;
-    width: 150px;
-    height: 50px;
- }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
-</style>
-</head>
-<body>
+    <!-- CSS -->
 
-<div class="header">
-  <p>Brand Waali Quality, Bazaar Waali Deal! </p>
-<div class="right" >Impact@Snapdeal  HelpCenter  DownloadApp
-</div>   
-</div>
-<div class="one">
-    <img src="img/snapdeal logo.png" width="200px" height="150px">
-    <i style='font-size:24px'></i>
-    <div class="search-container">
-        <form >
-            <center> <input type="text"  placeholder="Search Products & brands" >
-    <button type="button" class="btn btn-primary">Search</button></center>
-        </form>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #header {
+        background-color: rgb(198, 2, 61);
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 80px;
+      }
+
+      #hd2 {
+        background-color: rgb(228, 0, 70);
+        padding-inline: 70px;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+      }
+
+      .link {
+        color: white;
+        text-decoration: none;
+        margin-inline: 15px;
+      }
+
+      .button {
+        background: none;
+        border: none;
+        color: white;
+        margin-inline: 20px;
+        height: 100%;
+      }
+
+      .aside {
+        color: grey;
+        text-decoration: none;
+      }
+
+      .aside:hover {
+        border-left: 4px solid red;
+        padding-left: 10px;
+      }
+
+      li {
+        margin-block: 13px;
+        font-size: small;
+      }
+
+      .hvr:hover {
+        box-shadow: 1px 1px 5px grey;
+
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: rgba(128, 128, 128, 0.055)">
+    <!-- Header 1 -->
+
+    <div id="header">
+      <div>
+        <p class="text-light">Brand Waali Quality. Bazaar Waali Deal!</p>
       </div>
-   
-</div>
-<div class="vertical">
-    <a href="#" class="active">Top Categories</a>
-    <a href="#">Men's Fashion</a>
-    <a href="#">Women's Fashion</a>
-    <a href="#">Home & Kitchen</a>
-    <a href="#">Toys & Kid's Fashion</a>
-    <a href="#">Beauty,Health</a>
-    <a href="#" class="active">More Categories</a>
-    <a href="#">Automotives</a>
-    <a href="#">Mobile&Accessories</a>
-    <a href="#">Electronics</a>
-    <a href="#">Sports,Fitness&Outdoor</a>
-    <a href="#">Computer & Gaming</a>
-    <a href="#">Books,Media & Music</a>
-    <a href="#">Hobbies</a>
-    <a href="#" class="active">TRENDING SEARCHES</a>
-    <a href="#">Kitchen Products</a>
-    <a href="#">Shoes for Men</a>
-    <a href="#">Kurti Set</a>
-    <a href="#">Sandal Men</a>
-    <a href="#">Sport Shoe Men</a>
-</div>
+      <nav>
+        <a href="#" class="link">Impact@Snapdeal</a>
+        <a href="#" class="link">Help Center</a>
+        <a href="#" class="link">Sell on Snapdeal</a>
+        <a href="#" class="link">Download App</a>
+        <a href="#" class="link">Donate For Elderly</a>
+      </nav>
+    </div>
 
-</body>
+    <!-- Header 2 -->
+
+    <header id="hd2">
+      <!-- brand name -->
+
+      <div style="display: flex; padding: 10px">
+        <img
+          src="https://www.snapdeal.com/img/icons/finalFavicon.ico"
+          alt="Icon"
+          width="38px"
+        />
+        <h2 class="text-light" style="font-size: 1.6rem">Snapdeal</h2>
+      </div>
+
+      <!-- search  -->
+
+      <div style="display: flex; align-self: center">
+        <input
+          type="text"
+          style="width: 700px; height: 35px; padding-inline: 25px"
+          placeholder="Search products & brands"
+        />
+        <button
+          class="bg-dark text-light"
+          style="height: 35px; width: 150px; margin-left: 0px; border: none"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Search
+        </button>
+      </div>
+
+      <!-- cart section -->
+
+      <div>
+        <button class="button">
+          Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <button class="button">Sign In <i class="fa-solid fa-user"></i></button>
+      </div>
+    </header>
+
+    <div style="display: flex; margin-block: 20px; margin-inline: 90px">
+      <!-- aside container -->
+
+      <div
+        style="
+          width: fit-content;
+          box-shadow: 1px 1px 5px grey;
+          background-color: white;
+          height: fit-content;
+          padding-right: 25px;
+        "
+      >
+        <ul style="list-style-type: none">
+          <li class="aside">TOP CATEGORIES</li>
+          <li><a href="#" class="aside">Men's Fashion</a></li>
+          <li><a href="#" class="aside">Women's Fashion</a></li>
+          <li><a href="#" class="aside">Home and Kitchen</a></li>
+          <li><a href="#" class="aside">Toy, Kid's Fashion</a></li>
+          <li><a href="#" class="aside">beauty, Health & Daily</a></li>
+          <li class="aside">MORE CATEGORIES</li>
+          <li><a href="#" class="aside">Automotives</a></li>
+          <li><a href="#" class="aside">Mobile & Accesories</a></li>
+          <li><a href="#" class="aside">Electronics</a></li>
+          <li><a href="#" class="aside">Sports, Fitness & Outdoor</a></li>
+          <li><a href="#" class="aside">Computers & Gaming</a></li>
+          <li><a href="#" class="aside">Books, Media & Music</a></li>
+          <li><a href="#" class="aside">Hobbies</a></li>
+          <li class="aside">TRENDING SEARCHES</li>
+          <li>
+            <a href="#" class="aside"
+              ><i class="fa-solid fa-magnifying-glass"></i> Kitchen Product</a
+            >
+          </li>
+          <li>
+            <a href="#" class="aside"
+              ><i class="fa-solid fa-magnifying-glass"></i> Shoes For Men</a
+            >
+          </li>
+          <li>
+            <a href="#" class="aside"
+              ><i class="fa-solid fa-magnifying-glass"></i> Kurti Set</a
+            >
+          </li>
+          <li>
+            <a href="#" class="aside"
+              ><i class="fa-solid fa-magnifying-glass"></i> Sandal Men</a
+            >
+          </li>
+          <li>
+            <a href="#" class="aside"
+              ><i class="fa-solid fa-magnifying-glass"></i> Sport Shoe Men</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- center content -->
+
+      <div style="margin-inline: 30px">
+        <!-- center banner  -->
+
+        <div style="display: flex; justify-content: space-between">
+          <div
+            style="
+              width: 1050px;
+              height: 300px;
+              margin-bottom: 15px;
+              background-image: url(https://n2.sdlcdn.com/imgs/k/v/r/web_home_903_new_12-13ad3.jpg);
+            "
+          ></div>
+
+          <!-- ad content -->
+
+          <div style="width: 300px; height: 300px; background-color: white">
+            <img
+              src="https://n2.sdlcdn.com/imgs/f/0/p/DOD_WEB_230x384px-2ac2c.jpg"
+              alt="Ad"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+
+        <!-- recently viewed products -->
+
+        <h1 style="margin-block: 25px">Recently Viewed Products</h1>
+
+        <!-- hover cards -->
+
+        <div
+          style="
+            width: 1360px;
+            height: 380px;
+            margin-top: 15px;
+            display: flex;
+            padding-left: 5px;
+            background-color: white;
+          "
+        >
+          <!-- cards -->
+
+          <div
+          style="
+            height: 100%;
+  
+            width: 225px;
+          "
+          class="hvr"
+        >
+          <img
+            src="https://rukminim2.flixcart.com/image/612/612/k95yhzk0/mug/p/r/p/subi-printed-new-day-new-start-white-name-mug-model-no-original-imafryyzk78g97xh.jpeg?q=70"
+            alt="shoe"
+            width="170px"
+            height="173px"
+            style="margin: 25px"
+          />
+          <div style="padding-inline: 25px">
+            <p>Ajanta Tan Casual Shoes</p>
+            <p>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>
+              <span style="text-decoration: line-through; color: grey"
+                >Rs.399</span
+              >
+              Rs.142
+              <span
+                style="
+                  border: 1px solid grey;
+                  color: grey;
+                  font-size: 0.7rem;
+                  padding: 3px;
+                "
+                >64% OFF</span
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            height: 100%;
+  
+            width: 225px;
+          "
+          class="hvr"
+        >
+          <img
+            src="https://rukminim2.flixcart.com/image/612/612/xif0q/key-chain/s/9/m/subitsha-name-black-keychain-sy-gifts-1-original-imagqfgum6ggdazw.jpeg?q=70"
+            alt="shoe"
+            width="175px"
+            height="173px"
+            style="margin: 25px"
+          />
+          <div style="padding-inline: 25px">
+            <p>Ajanta Tan Casual Shoes</p>
+            <p>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>
+              <span style="text-decoration: line-through; color: grey"
+                >Rs.399</span
+              >
+              Rs.142
+              <span
+                style="
+                  border: 1px solid grey;
+                  color: grey;
+                  font-size: 0.7rem;
+                  padding: 3px;
+                "
+                >64% OFF</span
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            height: 100%;
+  
+            width: 225px;
+          "
+          class="hvr"
+        >
+          <img
+            src="https://rukminim2.flixcart.com/image/612/612/xif0q/deodorant/w/k/z/60-amber-kiss-deo-body-spray-60ml-for-women-pack-of-1-1-body-original-imah2gzbxfstruw3.jpeg?q=70"
+            alt="shoe"
+            width="170px"
+            height="173px"
+            style="margin: 25px"
+          />
+          <div style="padding-inline: 25px">
+            <p>Ajanta Tan Casual Shoes</p>
+            <p>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>
+              <span style="text-decoration: line-through; color: grey"
+                >Rs.399</span
+              >
+              Rs.142
+              <span
+                style="
+                  border: 1px solid grey;
+                  color: grey;
+                  font-size: 0.7rem;
+                  padding: 3px;
+                "
+                >64% OFF</span
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            height: 100%;
+  
+            width: 225px;
+          "
+          class="hvr"
+        >
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/81EAVMr6XzL._AC_SR185,210,0,B_BR3_.jpg"
+            alt="shoe"
+            width="170px"
+            height="173px"
+            style="margin: 25px"
+          />
+          <div style="padding-inline: 25px">
+            <p>Ajanta Tan Casual Shoes</p>
+            <p>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>
+              <span style="text-decoration: line-through; color: grey"
+                >Rs.399</span
+              >
+              Rs.142
+              <span
+                style="
+                  border: 1px solid grey;
+                  color: grey;
+                  font-size: 0.7rem;
+                  padding: 3px;
+                "
+                >64% OFF</span
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            height: 100%;
+  
+            width: 225px;
+          "
+          class="hvr"
+        >
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/616VHL0bHJL._AC_SR185,210,0,B_BR3_.jpg"
+            alt="shoe"
+            width="170px"
+            height="173px"
+            style="margin: 25px"
+          />
+          <div style="padding-inline: 25px">
+            <p>Ajanta Tan Casual Shoes</p>
+            <p>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>
+              <span style="text-decoration: line-through; color: grey"
+                >Rs.399</span
+              >
+              Rs.142
+              <span
+                style="
+                  border: 1px solid grey;
+                  color: grey;
+                  font-size: 0.7rem;
+                  padding: 3px;
+                "
+                >64% OFF</span
+              >
+            </p>
+          </div>
+        </div>
+    <div
+            style="
+              height: 100%;
+
+              width: 225px;
+            "
+            class="hvr"
+          >
+            <img
+              src="https://t2.sdlcdn.com/imgs/j/d/1/large/Aadi-Black-Casual-Shoes-SDL452425212-3-254be.jpeg"
+              alt="shoe"
+              width="170px"
+              height="173px"
+              style="margin: 25px"
+            />
+            <div style="padding-inline: 25px">
+              <p>Ajanta Tan Casual Shoes</p>
+              <p>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>
+                <span style="text-decoration: line-through; color: grey"
+                  >Rs.399</span
+                >
+                Rs.142
+                <span
+                  style="
+                    border: 1px solid grey;
+                    color: grey;
+                    font-size: 0.7rem;
+                    padding: 3px;
+                  "
+                  >64% OFF</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second cards content -->
+
+    <div
+      style="
+        height: 380px;
+        margin-top: 15px;
+        display: flex;
+        padding-left: 5px;
+        background-color: white;
+        margin-inline: 90px;
+
+        width: fit-content;
+      "
+    >
+      <!-- cards -->
+
+      <div
+        style="
+          height: 100%;
+
+          width: 225px;
+        "
+        class="hvr"
+      >
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/k95yhzk0/mug/p/r/p/subi-printed-new-day-new-start-white-name-mug-model-no-original-imafryyzk78g97xh.jpeg?q=70"
+          alt="shoe"
+          width="170px"
+          height="173px"
+          style="margin: 25px"
+        />
+        <div style="padding-inline: 25px">
+          <p>Ajanta Tan Casual Shoes</p>
+          <p>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p>
+            <span style="text-decoration: line-through; color: grey"
+              >Rs.399</span
+            >
+            Rs.142
+            <span
+              style="
+                border: 1px solid grey;
+                color: grey;
+                font-size: 0.7rem;
+                padding: 3px;
+              "
+              >64% OFF</span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          height: 100%;
+
+          width: 225px;
+        "
+        class="hvr"
+      >
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/key-chain/s/9/m/subitsha-name-black-keychain-sy-gifts-1-original-imagqfgum6ggdazw.jpeg?q=70"
+          alt="shoe"
+          width="175px"
+          height="173px"
+          style="margin: 25px"
+        />
+        <div style="padding-inline: 25px">
+          <p>Ajanta Tan Casual Shoes</p>
+          <p>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p>
+            <span style="text-decoration: line-through; color: grey"
+              >Rs.399</span
+            >
+            Rs.142
+            <span
+              style="
+                border: 1px solid grey;
+                color: grey;
+                font-size: 0.7rem;
+                padding: 3px;
+              "
+              >64% OFF</span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          height: 100%;
+
+          width: 225px;
+        "
+        class="hvr"
+      >
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/deodorant/w/k/z/60-amber-kiss-deo-body-spray-60ml-for-women-pack-of-1-1-body-original-imah2gzbxfstruw3.jpeg?q=70"
+          alt="shoe"
+          width="170px"
+          height="173px"
+          style="margin: 25px"
+        />
+        <div style="padding-inline: 25px">
+          <p>Ajanta Tan Casual Shoes</p>
+          <p>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p>
+            <span style="text-decoration: line-through; color: grey"
+              >Rs.399</span
+            >
+            Rs.142
+            <span
+              style="
+                border: 1px solid grey;
+                color: grey;
+                font-size: 0.7rem;
+                padding: 3px;
+              "
+              >64% OFF</span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          height: 100%;
+
+          width: 225px;
+        "
+        class="hvr"
+      >
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/I/81EAVMr6XzL._AC_SR185,210,0,B_BR3_.jpg"
+          alt="shoe"
+          width="170px"
+          height="173px"
+          style="margin: 25px"
+        />
+        <div style="padding-inline: 25px">
+          <p>Ajanta Tan Casual Shoes</p>
+          <p>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p>
+            <span style="text-decoration: line-through; color: grey"
+              >Rs.399</span
+            >
+            Rs.142
+            <span
+              style="
+                border: 1px solid grey;
+                color: grey;
+                font-size: 0.7rem;
+                padding: 3px;
+              "
+              >64% OFF</span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          height: 100%;
+
+          width: 225px;
+        "
+        class="hvr"
+      >
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/I/616VHL0bHJL._AC_SR185,210,0,B_BR3_.jpg"
+          alt="shoe"
+          width="170px"
+          height="173px"
+          style="margin: 25px"
+        />
+        <div style="padding-inline: 25px">
+          <p>Ajanta Tan Casual Shoes</p>
+          <p>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <p>
+            <span style="text-decoration: line-through; color: grey"
+              >Rs.399</span
+            >
+            Rs.142
+            <span
+              style="
+                border: 1px solid grey;
+                color: grey;
+                font-size: 0.7rem;
+                padding: 3px;
+              "
+              >64% OFF</span
+            >
+          </p>
+        </div>
+      </div>
+     
+    </div>
+
+    <!-- Download App AD section -->
+
+    <div
+      style="
+        width: 1600px;
+        background-color: white;
+        margin-block: 50px;
+        height: 450px;
+        margin-inline: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <img
+        src="https://i1.sdlcdn.com/img/appScreenshot@1x.png"
+        alt="Phone"
+        width="426"
+        height="443"
+        style="align-self: end"
+      />
+      <div style="margin-inline: 70px">
+        <h1 style="font-size: 2.2rem">
+          Download <br />
+          Snapdeal App Now
+        </h1>
+        <p style="font-size: 1.3rem; margin-block: 30px">
+          Fast, Simple and Delightful. <br />All it takes is 30 seconds to
+          Download.
+        </p>
+        <a href="#"><img src="pngwing.com.png" alt="" width="130px" /></a>
+        <a href="#"><img src="pngwing.com (1).png" alt="" width="140px" /></a>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <!-- Footer -->
+
+  <footer>
+    <p
+      style="
+        margin-inline: 120px;
+        color: grey;
+        font-size: small;
+        margin-bottom: 50px;
+      "
+    >
+      <b> Men:</b> Shirts for Men / Casual Shirts for Men / Formal Shirts for
+      Men / Hoodies for Men / Cotton Shirts for Men / T Shirts for Men / Polo T
+      shirts / Kurta Pajama for Men / White Shirt / Black Shirt / Lower for Men
+      / Trousers for Men / Jacket for Men / Formal Pants for Men / Tracksuit for
+      Men / Jeans for Men / Kurta Payjama Sets / Kurta for Men / Blazer for Men
+      / Sweater for Men <br />
+
+      <b> Women:</b> Tops for Women / Kurti / Cotton Sarees / Georgette Sarees /
+      Chiffon Sarees / Net Sarees / Dresses for Women / Jumpsuit for Women /
+      Jeans for Women / Salwar Suit / Bra / Jacket for Women / Night Dress for
+      Women / Sweatshirt for Women / Shorts for Women / Readymade Blouse /
+      Dupatta / T Shirt for Women / Shirts for Women / Skirts for Women / Ethnic
+      wear for Women / Western Dresses for Women / Leggings for Women <br />
+      <b>Footwear: </b> Men's Footwear / Casual Shoes for Men / Formal Shoes for
+      Men / Loafers for Men / Slippers for Men / Boots for Men / Sandals for Men
+      / Footwear for Women / Heels for Women / Sandals for Women / Shoes for
+      Women / Sandals for Women / Slippers for Women / Boots for Women / Jutti
+      for Women / Sports Shoes for Women <br />
+      <b>Home & Kitchen:</b> Wall Painting / Wall Stickers / Dream Catcher /
+      Rangoli Designs / Clock / Wall Clock / Alarm Clock / Diya / Bean Bag /
+      Laptop Table / Study Table / Wall Hanging / Ceiling Lights / Table Lamp /
+      Hanging Lights / LED Bulbs / Torch Light / LED Lights / Flower Vase /
+      Keychain / Rudraksha / Screwdriver <br />
+      <b>Watch:</b> Watch For Men / Womens Watches / Smart Watch / Boys Watch /
+      Girls Watch <br />
+      Home Furnishing: Bed Sheet / Mosquito Net / Mattress / Curtains / Sofa
+      Cover / Blanket / Pillow / Carpet / Apron / Quilt / Floor Mat / Towel /
+      Pillow Cover <br />
+      <b>Electronics:</b> Bluetooth Speakers / Headphones / Earphone / Ceiling
+      Fan / Geysers / Trimmer / Hair Straightner / Hair Dryer / Water Purifier /
+      Mixer Grinder / Gas Stove / Electric Kettle / Computer Mouse / Computer
+      Keyboard / USB & HDMI Cables / Computer Antivirus <br />
+      <b>Mobiles Accessories:</b> Mobile Covers / Leather Mobile Covers /
+      Printed Back Covers / Tempered Glass <br /><br />
+      Snapdeal is India's leading pure-play value Ecommerce platform. Founded in
+      2010 by Kunal Bahl and Rohit Bansal, Snapdeal is one of the top four
+      online lifestyle shopping destinations of India. Snapdeal brings together
+      a wide assortment of good quality and value- priced merchandise on its
+      platform. Snapdeal's vision is to enable the shoppers of Bharat to
+      experience the joy of living their aspirations through reliable,
+      value-for-money shopping. With a personalized, multilingual interface and
+      cutting edge technology, Snapdeal has simplified the shopping experience
+      for its value-conscious buyers by showcasing the most relevant products-
+      products that are a good functional fit with their needs and of a quality
+      that lasts- thereby delivering true value to its customers. With its
+      commitment to high service standards, Snapdeal suppliers operate under a
+      well structured ecosystem that enables them to offer great quality
+      products at affordable prices. With majority of the value-seeking,
+      middle-income, price-conscious buyers coming from the non-metros,
+      Snapdeal’s logistics networks powered by third party logistics cover more
+      than 96% of India’s pin codes enabling order deliveries to more than 2500
+      towns and cities and expanding. Further, Snapdeal's mission is to become
+      India’s value lifestyle omni-channel leader. We are excited about
+      continuing to build a complete ecosystem around value commerce, where we
+      can serve Bharat consumers wherever they are on their offline to online
+      shopping journey. Snapdeal is part of the AceVector Group and one of
+      India’s best-known e-commerce companies with an exclusive focus on the
+      value segment.
+    </p>
+    <hr />
+    <div style="display: flex; justify-content: space-between">
+      <p style="margin-inline: 90px; color: grey; font-size: small">
+        Copyright © 2021, Snapdeal Limited. All Rights Reserved
+      </p>
+      <p style="margin-inline: 90px; color: grey; font-size: small">
+        Made for Bharat
+      </p>
+    </div>
+  </footer>
 </html>
