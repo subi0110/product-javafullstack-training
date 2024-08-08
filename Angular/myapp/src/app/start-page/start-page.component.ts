@@ -41,7 +41,8 @@ export class StartPageComponent {
       pid:this.empList.length+1,
       psalary:Number(this.salary)
     }
-    this.empList.push(temp);
+    alert(temp.pid+" "+temp.pname+" "+temp.psalary);
+    // this.empList.push(temp);
     this.clear()
   }
 

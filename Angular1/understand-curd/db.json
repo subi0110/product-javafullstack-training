@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Thar",
+      "price": 700000000,
+      "rating": 9.7
+    }
+  ]
+}

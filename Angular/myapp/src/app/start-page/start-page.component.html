@@ -1,4 +1,4 @@
-<div class="outter-container">
+<div class="outer-container">
     <div class="inner-container">
       <div class="title-card">
         <h1>Vehicle Registeration</h1>
@@ -53,9 +53,33 @@
               </button>
   
             </div>
+            
           </form>
         </div>
-        
+      
+      </div>
+
+      <div class="data-listing-area">
+        <h4>Vehicle list</h4>
+        <table style="width: 100vh" >
+          <tr>
+            <th>ID</th>
+            <th>brand</th>
+            <th>Price</th>
+            <th>edit</th>   
+            <th>delete</th>
+          </tr>
+
+          <tr *ngFor="let data of empList">
+            <td>{{ data.pid }}</td>
+            <td>{{ data.pname }}</td>
+            <td>{{ data.psalary }}</td>
+            <td><i class="bi bi-pen" (click)="updateTogglor(data.pid)"></i></td>
+            <td>
+              <i class="bi bi-x-lg" (click)="removeEmpo(data.pid)"></i>
+            </td>
+          </tr>
+        </table>
       </div>
       
     </div>
